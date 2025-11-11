@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KelasController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('kelas', KelasController::class);
